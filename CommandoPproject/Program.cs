@@ -10,6 +10,17 @@ namespace CommandoPproject
     {
         static void Main(string[] args)
         {
+            Commando mm= new Commando("moshe","xxx", "Hide");
+            mm.Walk();
+            Console.WriteLine(mm.Name);
+            Weapon ww = new Weapon("gon","refael",3);
+            ww.Shoot();
+            ww.Shoot();
+            ww.Shoot();
+            ww.Shoot();
+
+
+
         }
     }
 }

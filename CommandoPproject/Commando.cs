@@ -8,7 +8,7 @@ namespace CommandoPproject
 {
     internal class Commando
     {
-        string Name;
+        public string Name;
         string CodeName;
         List<string> Tools = new List<string> { "hammer", "chisel", "rope", "bag", "water bottle" };
         string Status { get; set; }
