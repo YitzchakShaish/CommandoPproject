@@ -29,5 +29,6 @@ namespace CommandoPproject
             }
             else Console.WriteLine("There is no bullet in the cartridge to fire.");
         }
+
     }
 }

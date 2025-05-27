@@ -10,14 +10,20 @@ namespace CommandoPproject
     {
         static void Main(string[] args)
         {
-            Commando mm= new Commando("moshe","xxx", "Hide");
-            mm.Walk();
-            Console.WriteLine(mm.Name);
+            Commando c1= new Commando("moshe","xxx", "Hide");
+            c1.Walk();
+            c1.SayName("COLONEL");
             Weapon ww = new Weapon("gon","refael",3);
-            ww.Shoot();
-            ww.Shoot();
-            ww.Shoot();
-            ww.Shoot();
+            AirCommando a1 = new AirCommando("itzik", "231", " ");
+            SeaCommando s1 = new SeaCommando("chaim", "===", " ");
+            Commando [] nn = { c1, a1, s1 };
+            foreach (var i in nn)
+            {
+                Console.WriteLine(i.GetType());
+                i.Attack();
+            }  
+
+
 
 
 

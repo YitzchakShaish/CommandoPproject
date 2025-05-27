@@ -8,10 +8,10 @@ namespace CommandoPproject
 {
     internal class Commando
     {
-        public string Name;
-        string CodeName;
+        string Name;
+        public string CodeName { get; set; }
         List<string> Tools = new List<string> { "hammer", "chisel", "rope", "bag", "water bottle" };
-        string Status { get; set; }
+        string Status;
     
     public Commando(string name, string codeName,  string status)
         {
@@ -20,7 +20,7 @@ namespace CommandoPproject
             Status = status;
         }
         
-    public void Walk()
+        public void Walk()
         {
             Status = "Walk";
             Console.WriteLine($"The soldier : {Status}ed");
@@ -30,11 +30,22 @@ namespace CommandoPproject
             Status = "Hide";
             Console.WriteLine($"The soldier : {Status}ed");
         }
-        public void Attack()
+        public virtual void Attack()
         {
             Console.WriteLine($"Commando with Code Name: \"{CodeName}\" is active.");
         }
-
+        public void SayName(string commanderRank)
+        {
+            if (commanderRank.Equals("GENERAL"))
+            {
+                Console.WriteLine($"Teh name is: {Name}");
+            }
+            else if (commanderRank.Equals("COLONEL"))
+            {
+                Console.WriteLine($"Teh codename is: {CodeName}");
+            }
+            else Console.WriteLine("It is not possible to show you the information.");
+        }
     }
 
 }
