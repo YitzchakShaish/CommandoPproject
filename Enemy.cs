@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommandoPproject
+namespace CommandoProject
 {
     internal class Enemy
     {
