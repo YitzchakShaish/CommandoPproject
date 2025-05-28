@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommandoPproject
+namespace CommandoProject
 {
     internal class Commando
     {
@@ -13,11 +13,11 @@ namespace CommandoPproject
         List<string> Tools = new List<string> { "hammer", "chisel", "rope", "bag", "water bottle" };
         string Status;
     
-    public Commando(string name, string codeName,  string status)
+    public Commando(string name, string codeName)
         {
             Name = name;
             CodeName = codeName;
-            Status = status;
+           
         }
         
         public void Walk()
