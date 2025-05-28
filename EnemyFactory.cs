@@ -3,15 +3,15 @@ using System.Collections.Generic;
 
 namespace CommandoPproject
 {
-    internal static class EnemyFactory
+    internal  class EnemyFactory
     {
-        private static List<Enemy> listEnemy = new List<Enemy>();
-        private static List<string> namesEnemy = new List<string>
+        private  List<Enemy> listEnemy = new List<Enemy>();
+        private  List<string> namesEnemy = new List<string>
         {
             "mohamd", "aboo", "sinowar", "m2", "m3", "m5", "m6"
         };
 
-        public static void GetEnemy(int num)
+        public  void GetEnemy(int num)
         {
             listEnemy.Clear(); 
             for (int i = 0; i < num && i < namesEnemy.Count; i++)
@@ -20,7 +20,7 @@ namespace CommandoPproject
             }
         }
 
-        public static List<Enemy> GetListEnemy()
+        public  List<Enemy> GetListEnemy()
         {
             return listEnemy;
         }
