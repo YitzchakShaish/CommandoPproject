@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace CommandoPproject
+namespace CommandoProject
 {
     internal class AirCommando : Commando
     {
-        public AirCommando(string name, string codeName, string status) : base(name, codeName, status)
+        public AirCommando(string name, string codeName) : base(name, codeName)
         {
            
         }

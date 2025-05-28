@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CommandoPproject
+namespace CommandoProject
 {
     internal class SeaCommando : Commando
     {
 
-        public SeaCommando(string name, string codeName, string status) : base(name, codeName, status)
+        public SeaCommando(string name, string codeName) : base(name, codeName)
         {
         }
         public void Whoa(int meter)
