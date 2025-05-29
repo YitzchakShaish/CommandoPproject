@@ -20,5 +20,9 @@ namespace CommandoProject
         {
             Console.WriteLine($" Hi I'm Enemy, my name is: {Name}");
         }
+        public override string ToString()
+        {
+            return $"name: {Name}, life: {Life}, isLive = {IsLive} ";
+        }
     }
 }

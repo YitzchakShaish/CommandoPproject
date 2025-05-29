@@ -46,6 +46,11 @@ namespace CommandoProject
             }
             else Console.WriteLine("It is not possible to show you the information.");
         }
+        public override string ToString()
+        {
+            string listTools = string.Join(", ",Tools);
+            return  $"name: {Name}, codeName: {CodeName}, tolls: [{listTools}] ";
+        }
     }
 
 }
