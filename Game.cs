@@ -8,6 +8,7 @@ namespace CommandoProject
         private WeaponFactory weaponFactory;
         private CommandoFactory commandoFactory;
         private EnemyFactory enemyFactory;
+        
 
         public Game()
         {
@@ -28,6 +29,17 @@ namespace CommandoProject
             foreach (var (name, manufacturer, numberPalls) in weapons)
             {
                 weaponFactory.GetWeapon(name, manufacturer, numberPalls);
+            }
+            //ColdWeapons
+            var coldWeapons = new List<(string tipe, string name, string color)>
+            {
+                ("stone","s111","bloo"),
+                ("knife","k22","blak"),
+                ("stone","stoner123","read")
+            };
+            foreach (var(tipe, name, color) in coldWeapons)
+            {
+                weaponFactory.GetColdWeapon(tipe, name, color);
             }
 
             // Commandos
@@ -56,6 +68,11 @@ namespace CommandoProject
             foreach (var weapon in weaponFactory.GetListWeapon())
             {
                 Console.WriteLine(weapon);
+            }
+            Console.WriteLine("\nColdWeapons: ");
+            foreach (var coldWeapon in weaponFactory.GetListColdWeapon())
+            {
+                Console.WriteLine(coldWeapon);
             }
 
             Console.WriteLine("\nCommandos:");
