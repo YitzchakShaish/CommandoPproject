@@ -45,9 +45,9 @@
   <ItemGroup>
     <Compile Include="Commandors\AirCommando.cs" />
     <Compile Include="Commandors\Commando.cs" />
-    <Compile Include="CommandoFactory.cs" />
+    <Compile Include="Factories\CommandoFactory.cs" />
     <Compile Include="Enemy.cs" />
-    <Compile Include="EnemyFactory.cs" />
+    <Compile Include="Factories\EnemyFactory.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Interfaces\IColdWeapon.cs" />
     <Compile Include="Program.cs" />
@@ -56,7 +56,7 @@
     <Compile Include="Weapones\Knife.cs" />
     <Compile Include="Weapones\Stone.cs" />
     <Compile Include="Weapones\Weapon.cs" />
-    <Compile Include="WeaponFactory.cs" />
+    <Compile Include="Factories\WeaponFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
