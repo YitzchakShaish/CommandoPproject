@@ -7,7 +7,7 @@ using CommandoProject.Interfaces;
 
 namespace CommandoProject.Weapones
 {
-    internal class knife : IColdWeapon
+    internal class Knife : IColdWeapon
 
     {
         string name;
@@ -28,12 +28,16 @@ namespace CommandoProject.Weapones
                 }
                 else Console.WriteLine($"The knife named: {name} Worn");
             }
-        public knife(string name, string color)
+        public Knife(string name, string color)
         {
             this.name = name;
             this.color = color;
         }
+        public override string ToString()
+        {
+            return $"name: {name}, color: {color}, CurrentNumberStrokes: {CurrentNumberStrokes}, MaximumNumberStrokes: {MaximumNumberStrokes}";
+        }
         
     }
-    
+        
 }

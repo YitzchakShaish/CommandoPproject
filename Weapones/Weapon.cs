@@ -29,6 +29,10 @@ namespace CommandoProject
             }
             else Console.WriteLine("There is no bullet in the cartridge to fire.");
         }
+    public override string ToString()
+        {
+            return $"name: {Name}, manuFacturer: {ManuFacturer},numberPalls: {NumberPalls}";
+        }
 
     }
 }
