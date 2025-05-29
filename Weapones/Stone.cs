@@ -33,5 +33,9 @@ namespace CommandoProject.Weapones
             this.name = name;
             this.color = color;
         }
+        public override string ToString()
+        {
+            return $"name: {name}, color: {color}, CurrentNumberStrokes: {CurrentNumberStrokes}, MaximumNumberStrokes: {MaximumNumberStrokes}";
+        }
     }
 }
